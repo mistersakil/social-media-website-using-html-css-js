@@ -16,20 +16,32 @@
   <body style="min-height: 150vh">
     <!-- Header Section -->
 
-    <header class="header">
+    <header class="header" id="header">
       <div class="row">
         <aside class="col left">
           <a href="./" class="logo">
             <img src="./favicon.png" alt="Logo" class="img" />
             Octapia
           </a>
-
-          <!-- <a class="logo" href="./">Octa<span>Social</span></a> -->
-
+        </aside>
+        <aside class="col center">
           <nav class="nav">
-            <a href="./"><i class="fas fa-bell"></i></a>
-            <a href="./"><i class="fas fa-envelope"></i></a>
-            <a href="./"><i class="fas fa-video"></i></a>
+            <a href="./" class="link">
+              <i class="icon fas fa-home"></i>
+              <span class="counter">3</span>
+            </a>
+            <a href="./" class="link">
+              <i class="icon fas fa-bell"></i>
+              <span class="counter">3</span>
+            </a>
+            <a href="./" class="link">
+              <i class="icon fas fa-envelope"></i>
+              <span class="counter">3</span>
+            </a>
+            <a href="./" class="link">
+              <i class="icon fas fa-video"></i>
+              <span class="counter">3</span>
+            </a>
           </nav>
         </aside>
         <aside class="col right">
@@ -37,7 +49,7 @@
             <label for="searchBox">
               <i class="fas fa-search"></i>
             </label>
-            <input type="search" placeholder="search here..." id="searchBox" />
+            <input type="search" placeholder="Type text..." id="searchBox" />
           </form>
           <figure class="profile">
             <img src="./images/profile-pic.png" alt="profile-pic" class="img" />
@@ -46,8 +58,23 @@
       </div>
     </header>
     <!-- Header Section End -->
+    <!-- Headlines Section -->
+    <section class="headline" id="headline">
+      <div class="container">
+        <h2 class="title">Headlines</h2>
+        <article class="content">
+          <a href="./" class="news">First news of the day</a>
+          <a href="./" class="news">Second news of the day</a>
+          <a href="./" class="news">Third news of the day</a>
+          <a href="./" class="news">Fourth news of the day</a>
+          <a href="./" class="news">Fifth news of the day</a>
+        </article>
+      </div>
+    </section>
+    <!-- Headlines Section End -->
 
     <!-- Scripts -->
+    <script src="./js/main.js"></script>
     <!-- Scripts End -->
   </body>
 </html>

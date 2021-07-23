@@ -1,7 +1,8 @@
+/* Header Section  */
 .header {
   background: var(--white);
   padding: 1rem 5%;
-  height: 8rem;
+  height: 10rem;
   overflow: hidden;
   color: var(--black);
   box-shadow: 0 0 3rem 0.1rem var(--grey200);
@@ -9,6 +10,11 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
+}
+.header.sticky {
+  padding: 0.5rem 5%;
+  height: 6rem;
 }
 .header .row {
   display: flex;
@@ -19,7 +25,7 @@
   height: 100%;
 }
 .header .row .col {
-  flex: 1 1 48%;
+  flex: 1 1 30%;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -38,9 +44,9 @@
   align-items: center;
   gap: 0 1rem;
   text-transform: capitalize;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
+  font-weight: 700;
   letter-spacing: 0;
-  letter-spacing: -0.1rem;
   color: var(--blueLight);
 }
 .header .row .left .logo .img {
@@ -48,32 +54,78 @@
   height: 6rem;
 }
 
+.header .row .left .logo .img.sticky {
+  height: 5rem;
+}
+
+.header .row .center {
+  justify-content: center;
+}
+.header .row .center .nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 3rem;
+}
+.header .row .center .nav .link {
+  width: 4rem;
+  height: 4rem;
+  background: var(--blueLight);
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 1.6rem;
+  position: relative;
+}
+.header .row .center .nav .link.sticky {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+.header .row .center .nav .link:hover {
+  background: var(--blue);
+  color: var(--white);
+  transform: scale(1.1);
+}
+.header .row .center .nav .link .counter {
+  position: absolute;
+  left: 2rem;
+  top: -1rem;
+  background: var(--blue200);
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  color: var(--white);
+}
+
 .header .row .right {
   justify-content: flex-end;
-  gap: 0 1rem;
+  gap: 0 2rem;
 }
 .header .row .right .searchForm {
   display: flex;
-  height: 100%;
+  height: 80%;
   align-items: center;
   background: var(--white);
   padding: 0 2rem;
   border-radius: 5rem;
-  width: 60%;
   border: 0.1rem solid var(--blueLight);
+  width: 50%;
 }
 .header .row .right .searchForm label {
   color: var(--blueLight);
   cursor: pointer;
 }
 .header .row .right .searchForm input {
-  height: 100%;
   border: none;
   outline: none;
   margin-left: 1rem;
   font-size: 1.6rem;
-  flex: 1 1 85%;
-  border-radius: 5rem;
+  width: 100%;
+  overflow: hidden;
 }
 .header .row .right .searchForm input::placeholder {
   color: var(--blueLight);
@@ -88,4 +140,59 @@
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
+  border: 0.5rem solid var(--blueLight);
 }
+.header .row .right .profile .img.sticky {
+  width: 5rem;
+  height: 5rem;
+}
+/* Header Section End  */
+/* Headlines Section  */
+.headline {
+  background: var(--blueLight);
+  padding: 0rem 5%;
+  height: 4rem;
+  overflow: hidden;
+  color: var(--black);
+  position: relative;
+  top: 10rem;
+  left: 0;
+  width: 100%;
+}
+.headline .container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.headline .container .title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  color: var(--white);
+  flex: 1 1 10%;
+}
+.headline .container .content {
+  flex: 1 1 80%;
+  display: flex;
+  align-items: center;
+}
+.headline .container .content .news {
+  color: var(--grey200);
+  height: 100%;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+.headline .container .content .news:hover {
+  color: var(--white);
+}
+.headline .container .content .news::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--blueLight2);
+  content: "\f111";
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+/* Headlines Section End  */
