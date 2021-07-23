@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.png" type="image/png" sizes="16x16" />
     <title>Social media website using html,css,js - Octapia</title>
     <!-- Styles  -->
     <link rel="stylesheet" href="./css/default.css" />
@@ -18,9 +19,13 @@
     <header class="header">
       <div class="row">
         <aside class="col left">
-          <div class="logo">
-            <h2>Octa<span>Book</span></h2>
-          </div>
+          <a href="./" class="logo">
+            <img src="./favicon.png" alt="Logo" class="img" />
+            Octapia
+          </a>
+
+          <!-- <a class="logo" href="./">Octa<span>Social</span></a> -->
+
           <nav class="nav">
             <a href="./"><i class="fas fa-bell"></i></a>
             <a href="./"><i class="fas fa-envelope"></i></a>
@@ -32,7 +37,7 @@
             <label for="searchBox">
               <i class="fas fa-search"></i>
             </label>
-            <input type="text" placeholder="search here..." id="searchBox" />
+            <input type="search" placeholder="search here..." id="searchBox" />
           </form>
           <figure class="profile">
             <img src="./images/profile-pic.png" alt="profile-pic" class="img" />

@@ -29,6 +29,8 @@
   --blue100: rgb(0, 0, 100);
   --blue50: rgb(0, 0, 50);
   --blueLight: rgb(0, 153, 255);
+  --blueLight3: rgb(0, 138, 230);
+  --blueLight2: rgb(77, 184, 255);
   --black: rgb(0, 0, 0);
   --black10: rgb(10, 10, 10);
   --black20: rgb(20, 20, 20);
@@ -65,7 +67,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Poppins, Oswald, Roboto, sans-serif;
-  color: var(--black);
+  color: var(--blueLight);
   min-height: 350vh;
   position: relative;
 }
@@ -75,11 +77,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--blue150);
-  border-radius: 1rem;
+  background: var(--blueLight2);
+  border-radius: 0rem 0rem 0 2rem;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue);
+  background: var(--blueLight);
   cursor: pointer;
 }
 /* End: Scrollbar  */
