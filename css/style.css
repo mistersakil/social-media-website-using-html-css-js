@@ -13,7 +13,7 @@
   z-index: 100;
 }
 .header.sticky {
-  padding: 0.5rem 5%;
+  padding: 0.5rem 3%;
   height: 6rem;
 }
 .header .row {
@@ -219,6 +219,11 @@
 }
 .leftSidebar {
   left: 3%;
+  overflow: auto;
+}
+/* Scrollbar */
+.leftSidebar::-webkit-scrollbar {
+  width: 0.3rem;
 }
 .leftSidebar .row {
   margin-bottom: 2rem;
@@ -226,7 +231,7 @@
   border-bottom: 0.1rem solid var(--grey220);
 }
 .leftSidebar .row:last-child {
-  margin-bottom: 0;
+  margin-bottom: 5rem;
   padding-bottom: 0;
   border-bottom: none;
 }
@@ -305,9 +310,97 @@
 .rightSidebar {
   right: 3%;
 }
+.rightSidebar::-webkit-scrollbar {
+  width: 0.3rem;
+}
+.rightSidebar .row {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid var(--grey220);
+}
+.rightSidebar .row:last-child {
+  margin-bottom: 5rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.rightSidebar .row .title {
+  font-size: 1.6rem;
+  color: var(--blueLight);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.rightSidebar .row .title .icon {
+  cursor: pointer;
+  opacity: 0;
+}
+.rightSidebar .row:hover .title .icon {
+  opacity: 1;
+}
+.rightSidebar .row .boxContainer {
+}
+.rightSidebar .row .boxContainer .box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 6rem;
+  margin-bottom: 1.8rem;
+}
+.rightSidebar .row .boxContainer .box .date {
+  border: 0.1rem solid var(--grey200);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 20%;
+  margin-right: 5%;
+  border-radius: 1rem;
+}
+.rightSidebar .row .boxContainer .box .date .day {
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: var(--grey);
+}
+.rightSidebar .row .boxContainer .box .date .month {
+  background: var(--blueLight);
+  padding: 0.5rem 0;
+  color: var(--white);
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 1rem 1rem;
+}
+.rightSidebar .row .boxContainer .box .content {
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+}
+.rightSidebar .row .boxContainer .box .content .title {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+.rightSidebar .row .boxContainer .box .content .location {
+  color: var(--grey150);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.rightSidebar .row .boxContainer .box .content .location .icon {
+  color: var(--black80);
+}
+.rightSidebar .row .boxContainer .box .content .readMore {
+  font-size: 1.2rem;
+  color: var(--blueLight);
+}
 /* Right Sidebar Section End  */
 
-/* Right Sidebar Section   */
+/* Main Content  Section   */
 .main {
   margin: 1rem 0;
   position: relative;
@@ -317,9 +410,9 @@
 }
 .main .container {
   margin: 0 auto;
-  width: 50%;
+  width: 45%;
   min-height: inherit;
   display: block;
   background: white;
 }
-/* Right Sidebar Section End  */
+/* Main Content Section End  */
