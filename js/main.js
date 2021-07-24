@@ -4,7 +4,7 @@ const logoImg = document.querySelector(".header .row .left .logo .img");
 const profilePic = document.querySelector(".header .row .right .profile .img");
 const navLink = document.querySelectorAll(".header .row .center .nav .link");
 const scrollEventHandler = function () {
-  if (window.scrollY >= 100) {
+  if (window.scrollY > 0) {
     isSticky(header);
     isSticky(logoImg);
     isSticky(profilePic);

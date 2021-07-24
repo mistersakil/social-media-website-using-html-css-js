@@ -44,6 +44,7 @@
   --grey200: rgb(200, 200, 200);
   --grey220: rgb(220, 220, 220);
   --grey240: rgb(240, 240, 240);
+  --grey245: rgb(245, 245, 245);
   --white: rgb(255, 255, 255);
   --golden: rgb(218, 165, 32);
 }
@@ -55,7 +56,7 @@
   transition: all 0.3s linear;
   text-decoration: none;
   text-transform: capitalize;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 html {
   font-size: 10px;
@@ -68,7 +69,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Poppins, Oswald, Roboto, sans-serif;
-  color: var(--blueLight);
+  color: var(--blue50);
   position: relative;
 }
 /* Scrollbar */

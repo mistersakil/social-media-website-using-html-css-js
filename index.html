@@ -28,19 +28,19 @@
           <nav class="nav">
             <a href="./" class="link">
               <i class="icon fas fa-home"></i>
-              <span class="counter">3</span>
+              <span class="counter">30</span>
             </a>
             <a href="./" class="link">
               <i class="icon fas fa-bell"></i>
-              <span class="counter">3</span>
+              <span class="counter">10</span>
             </a>
             <a href="./" class="link">
               <i class="icon fas fa-envelope"></i>
-              <span class="counter">3</span>
+              <span class="counter">70</span>
             </a>
             <a href="./" class="link">
               <i class="icon fas fa-video"></i>
-              <span class="counter">3</span>
+              <span class="counter">50</span>
             </a>
           </nav>
         </aside>
@@ -49,7 +49,7 @@
             <label for="searchBox">
               <i class="fas fa-search"></i>
             </label>
-            <input type="search" placeholder="Type text..." id="searchBox" />
+            <input type="search" placeholder="Search here..." id="searchBox" />
           </form>
           <figure class="profile">
             <img src="./images/profile-pic.png" alt="profile-pic" class="img" />
@@ -71,13 +71,90 @@
       </div>
     </section>
     <!-- Headlines Section End -->
-    <!-- Body Section  -->
-    <section class="body">
-      <div class="col left">some conten</div>
-      <div class="col center"></div>
-      <div class="col right">some conten</div>
+
+    <!-- Left Sidebar Section -->
+    <section class="leftSidebar" id="leftSidebar">
+      <div class="row">
+        <a href="./#profile" class="profile">
+          <img src="./images/profile-pic.png" alt="member-1" class="img" />
+          <span class="name">Sakil Jomadder</span>
+        </a>
+
+        <nav class="navLinks">
+          <a href="./#videos" class="link">
+            <i class="fas fa-user-friends icon"></i>
+            <span class="name">friends</span>
+          </a>
+          <a href="./#videos" class="link">
+            <i class="fas fa-layer-group icon"></i>
+            <span class="name">groups</span>
+          </a>
+          <a href="./#videos" class="link">
+            <i class="fas fa-pager icon"></i>
+            <span class="name">pages</span>
+          </a>
+          <a href="./#videos" class="link">
+            <i class="fas fa-gamepad icon"></i>
+            <span class="name">games</span>
+          </a>
+          <a href="./#videos" class="link">
+            <i class="fas fa-video icon"></i>
+            <span class="name">videos</span>
+          </a>
+          <a class="link">
+            <i class="fas fa-chevron-down icon"></i>
+            <span class="name">see more</span>
+          </a>
+        </nav>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <h3 class="boxTitle">
+          My Favorites
+          <i class="fas fa-edit icon" title="Edit"></i>
+        </h3>
+        <nav class="navLinks">
+          <a href="./#videos" class="link">
+            <img src="./images/shortcut-1.png" alt="shortcut-1" class="img" />
+            <span class="name">web design</span>
+          </a>
+          <a href="./#videos" class="link">
+            <img src="./images/shortcut-2.png" alt="shortcut-2" class="img" />
+            <span class="name">frontend design</span>
+          </a>
+          <a href="./#videos" class="link">
+            <img src="./images/shortcut-3.png" alt="shortcut-1" class="img" />
+            <span class="name">backend development</span>
+          </a>
+          <a href="./#videos" class="link">
+            <img src="./images/shortcut-4.png" alt="shortcut-1" class="img" />
+            <span class="name">MERN development</span>
+          </a>
+          <a href="./#videos" class="link">
+            <img src="./images/shortcut-1.png" alt="shortcut-1" class="img" />
+            <span class="name">Full Stack development</span>
+          </a>
+          <a class="link">
+            <i class="fas fa-chevron-down icon"></i>
+            <span class="name">see more</span>
+          </a>
+        </nav>
+      </div>
+      <!-- /.row -->
     </section>
-    <!-- Body Section End -->
+    <!-- /.leftSidebar -->
+
+    <!-- Left Sidebar Section End -->
+
+    <!-- Right Sidebar Section -->
+    <section class="rightSidebar" id="rightSidebar">right content</section>
+    <!-- Right Sidebar Section End -->
+
+    <!-- Main Content Section -->
+    <section class="main" id="main">
+      <div class="container">main content</div>
+    </section>
+    <!-- Main Content Section End -->
 
     <!-- Scripts -->
     <script src="./js/main.js"></script>
