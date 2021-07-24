@@ -398,6 +398,13 @@
   font-size: 1.2rem;
   color: var(--blueLight);
 }
+.rightSidebar .row .img {
+  width: 100%;
+  object-fit: cover;
+  border: 0.1rem solid var(--blueLight2);
+  padding: 0.5rem;
+  background: var(--white);
+}
 /* Right Sidebar Section End  */
 
 /* Main Content  Section   */
