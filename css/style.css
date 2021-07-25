@@ -460,6 +460,69 @@
   width: 45%;
   min-height: inherit;
   display: block;
+}
+.main .container .stories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 25rem;
+  gap: 0 3%;
+}
+.main .container .stories .story {
+  height: 100%;
+  width: 17%;
+  margin-top: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .container .stories .story .createStoryBtn {
+  color: var(--white);
+  background: var(--blueLight);
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+  line-height: 4rem;
+  border-radius: 50%;
+  border: 0.3rem solid white;
+  position: absolute;
+  bottom: 20%;
+  font-size: 2.5rem;
+}
+.main .container .stories .story .avatar {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  object-fit: cover;
+  object-position: top;
   background: white;
+  border: 0.3rem solid var(--blueLight);
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.main .container .stories .story .linkStory {
+  height: 100%;
+}
+.main .container .stories .story .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 2rem;
+}
+.main .container .stories .story .name {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: -4rem;
+  font-weight: 700;
+  background: var(--white);
+  color: var(--grey);
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
 }
 /* Main Content Section End  */
