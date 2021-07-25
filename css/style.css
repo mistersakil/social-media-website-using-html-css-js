@@ -525,4 +525,78 @@
   padding: 0 0.5rem;
   border-radius: 0.5rem;
 }
+
+.main .container .post {
+  height: 14rem;
+  background: var(--white);
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+}
+.main .container .post .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+.main .container .post .content .avatar {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.main .container .post .content .textBox {
+  flex: 1 1 70%;
+  background: var(--grey240);
+  border: none;
+  border-radius: 2rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  color: var(--black80);
+  padding: 0 1rem;
+  outline: 0;
+}
+
+.main .container .post .content .textBox:focus {
+  border: 0.1rem solid var(--blueLight2);
+}
+
+.main .container .post .features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1%;
+  margin-top: 1rem;
+  border-top: 0.1rem solid var(--grey200);
+  padding-top: 1rem;
+}
+.main .container .post .features .feature {
+  cursor: pointer;
+  flex: 1 1 30%;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+.main .container .post .features .feature:hover {
+  background: var(--grey240);
+}
+.main .container .post .features .feature .icon {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--red200);
+}
+.main .container .post .features .feature:nth-child(2) .icon {
+  color: var(--blueLight);
+}
+.main .container .post .features .feature:nth-child(3) .icon {
+  color: var(--golden);
+}
+.main .container .post .features .feature .name {
+  font-size: 1.6rem;
+  color: var(--grey);
+}
+
 /* Main Content Section End  */

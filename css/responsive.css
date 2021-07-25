@@ -6,6 +6,23 @@
     padding: 0 1rem;
   }
   /* Header End */
+  /* Left Sidebar Section   */
+  .leftSidebar,
+  .rightSidebar {
+    width: 24%;
+  }
+  .leftSidebar {
+    left: 1%;
+  }
+
+  /* Left Sidebar Section End  */
+
+  /* Right Sidebar Section   */
+  .rightSidebar {
+    right: 1%;
+  }
+
+  /* Right Sidebar Section End  */
 }
 
 /*## Large Device End ##*/
@@ -31,6 +48,26 @@
     gap: 0 1rem;
   }
   /* Header End */
+  /* Left Sidebar Section   */
+
+  .leftSidebar {
+    display: none;
+  }
+
+  /* Left Sidebar Section End  */
+
+  /* Main Content Section   */
+
+  .main .container {
+    margin: 0 0 0 2%;
+    width: 60%;
+  }
+  .rightSidebar {
+    width: 34%;
+    right: 2%;
+  }
+
+  /* Main Content Section End  */
 }
 
 /*## Medium Device End ##*/
@@ -60,6 +97,7 @@
   /* Main Content  Section   */
 
   .main .container {
+    margin: 0;
     width: 100%;
     padding: 0 2rem;
   }
