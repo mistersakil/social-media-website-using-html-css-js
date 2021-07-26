@@ -2,7 +2,7 @@
 .header {
   background: var(--white);
   padding: 1rem 3%;
-  height: 10rem;
+  height: 8rem;
   overflow: hidden;
   color: var(--black);
   box-shadow: 0 0 3rem 0.1rem var(--grey200);
@@ -601,4 +601,147 @@
   color: var(--grey);
 }
 
+/* .postPublished */
+
+.postPublished {
+  padding: 1rem;
+  background: var(--white);
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+.postPublished .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: none;
+}
+.postPublished .top .user {
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+}
+
+.postPublished .top .user .avatar {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--blueLight);
+  padding: 0.3rem;
+}
+
+.postPublished .top .user .info .name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--black20);
+}
+.postPublished .top .user .info .name .icon {
+  color: var(--green150);
+  font-size: 1.4rem;
+}
+.postPublished .top .user .info .time {
+  color: var(--grey);
+  font-size: 1.2rem;
+}
+
+.postPublished .actions .icon {
+  cursor: pointer;
+}
+.postPublished .content .text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--black50);
+  line-height: 2rem;
+  margin: 1.5rem 0;
+}
+.postPublished .content .text .link {
+  color: var(--blueLight);
+  font-weight: 600;
+}
+.postPublished .content .img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.postPublished .bottom {
+  position: relative;
+}
+.postPublished .bottom .after {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-bottom: 0.1rem solid var(--grey220);
+}
+.postPublished .bottom .after .likes {
+  color: var(--grey);
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-bottom: 1px dashed var(--white);
+}
+.postPublished .bottom .after .likes {
+  border-bottom: 1px dashed var(--white);
+}
+.postPublished .bottom .after .likes:hover {
+  color: var(--black10);
+  border-bottom: 1px dashed var(--grey150);
+}
+.postPublished .bottom .after .likes .icon {
+  color: var(--blueLight);
+}
+.postPublished .bottom .after .likes .icon:nth-child(2) {
+  color: var(--red200);
+}
+.postPublished .bottom .after .likes .icon:nth-child(3) {
+  color: var(--golden);
+}
+.postPublished .bottom .others {
+  display: flex;
+  flex-direction: row;
+  gap: 0 2rem;
+  font-size: 1.4rem;
+  color: var(--grey);
+}
+.postPublished .bottom .others .box {
+  border-bottom: 0.1rem dashed var(--white);
+  cursor: pointer;
+}
+.postPublished .bottom .others .box:hover {
+  border-bottom: 0.1rem dashed var(--grey);
+}
+.postPublished .bottom .before {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 1%;
+}
+
+.postPublished .bottom .before .box {
+  flex: 1 1 20%;
+  font-size: 1.4rem;
+  color: var(--black80);
+  cursor: pointer;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+  justify-content: center;
+}
+.postPublished .bottom .before .box:hover {
+  background: var(--grey220);
+}
+.postPublished .bottom .before .box .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-position: top;
+  object-fit: cover;
+}
+.postPublished .bottom .before .box .icon {
+  font-size: 1.4rem;
+  color: var(--black80);
+}
 /*## Main Content Section End  ##*/
