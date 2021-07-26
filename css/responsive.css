@@ -148,6 +148,40 @@
     top: 12rem;
   }
   /* Headlines Section End */
+
+  /*## Main Content Section  ##*/
+
+  .main .container {
+    padding: 0 0.6rem;
+  }
+
+  /* story */
+  .main .container .stories {
+    flex-wrap: wrap;
+    gap: 0 2%;
+  }
+  .main .container .stories .story {
+    height: 100%;
+    width: 17%;
+  }
+  /* post  */
+  .main .container .post {
+    padding: 2rem 0.6rem;
+    border-radius: 1rem;
+  }
+  .main .container .post .content {
+    gap: 2rem;
+    flex-wrap: nowrap;
+  }
+  .main .container .post .content .textBox {
+    width: 40%;
+    overflow: hidden;
+  }
+  .main .container .post .features .feature .name.hidden {
+    display: none;
+  }
+
+  /*## Main Content Section End  ##*/
 }
 
 /*## Extra Small Device End ##*/

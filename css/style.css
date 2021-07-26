@@ -461,17 +461,19 @@
   min-height: inherit;
   display: block;
 }
+/* story */
 .main .container .stories {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   height: 25rem;
-  gap: 0 3%;
+  justify-content: space-between;
+  gap: 0 2%;
 }
 .main .container .stories .story {
   height: 100%;
-  width: 17%;
+  flex: 1 1 17%;
   margin-top: 0.5rem;
   position: relative;
   display: flex;
@@ -487,7 +489,7 @@
   text-align: center;
   line-height: 4rem;
   border-radius: 50%;
-  border: 0.3rem solid white;
+  border: 0.3rem solid var(--white);
   position: absolute;
   bottom: 20%;
   font-size: 2.5rem;
@@ -500,7 +502,7 @@
   top: 5%;
   object-fit: cover;
   object-position: top;
-  background: white;
+  background: var(--white);
   border: 0.3rem solid var(--blueLight);
   border-radius: 50%;
   padding: 0.2rem;
@@ -525,12 +527,13 @@
   padding: 0 0.5rem;
   border-radius: 0.5rem;
 }
-
+/* post  */
 .main .container .post {
   height: 14rem;
   background: var(--white);
   margin-top: 4rem;
   padding: 2rem 1rem;
+  border-radius: 1rem;
 }
 .main .container .post .content {
   display: flex;
@@ -546,7 +549,7 @@
 }
 .main .container .post .content .textBox {
   flex: 1 1 70%;
-  background: var(--grey240);
+  background: var(--grey245);
   border: none;
   border-radius: 2rem;
   height: 4rem;
@@ -562,6 +565,7 @@
 
 .main .container .post .features {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -573,18 +577,16 @@
 .main .container .post .features .feature {
   cursor: pointer;
   flex: 1 1 30%;
-  text-align: center;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
   display: flex;
   align-items: center;
-  gap: 0 1rem;
+  justify-content: center;
+  gap: 0 1%;
 }
 .main .container .post .features .feature:hover {
   background: var(--grey240);
 }
 .main .container .post .features .feature .icon {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--red200);
 }
@@ -595,8 +597,8 @@
   color: var(--golden);
 }
 .main .container .post .features .feature .name {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--grey);
 }
 
-/* Main Content Section End  */
+/*## Main Content Section End  ##*/
