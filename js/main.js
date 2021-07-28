@@ -1,3 +1,4 @@
+const body = document.body;
 /* Navbar sticky */
 // const header = document.querySelector("#header");
 // const logoImg = document.querySelector(".header .row .left .logo .img");
@@ -35,3 +36,20 @@
 // };
 
 /* Navbar sticky */
+
+/**   navSetting Menu Toggler **/
+
+const settingMenuBox = document.querySelector(".header .row .navSetting ");
+const settingsMenuIcon = document.querySelector("#settingsMenuIcon");
+
+settingsMenuIcon.onclick = function (event) {
+  event.stopPropagation();
+  settingMenuBox.classList.toggle("active");
+};
+body.onclick = function () {
+  console.log("body click");
+  //   navSettingMenuBox.classList.toggle("active");
+  if (settingMenuBox.classList.contains("active")) {
+    settingMenuBox.classList.remove("active");
+  }
+};

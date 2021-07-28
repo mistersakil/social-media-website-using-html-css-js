@@ -3,7 +3,7 @@
   background: var(--white);
   padding: 1rem 3%;
   height: 8rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: var(--black);
   box-shadow: 0 0 3rem 0.1rem var(--grey200);
   position: sticky;
@@ -138,16 +138,151 @@
   align-items: center;
 }
 .header .row .right .profile .img {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  border: 0.5rem solid var(--blueLight);
+  border: 0.2rem solid var(--blueLight);
+  padding: 0.2rem;
+}
+.header .row .right .profile .icon {
+  width: 4rem;
+  height: 4rem;
+  background: var(--blueLight2);
+  text-align: center;
+  line-height: 4rem;
+  color: var(--white);
+  border-radius: 50%;
+  margin-left: 1rem;
+  font-size: 2.4rem;
+  cursor: pointer;
 }
 .header .row .right .profile .img.sticky {
   width: 5rem;
   height: 5rem;
 }
-/* Header Section End  */
+/* settings */
+.header .row .navSetting {
+  position: absolute;
+  top: 100%;
+  right: 3%;
+  width: 93%;
+  max-width: 40rem;
+  min-height: 50vh;
+  background: var(--white);
+  border: 0.1rem solid var(--grey200);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: none;
+}
+.header .row .navSetting.active {
+  display: block;
+}
+.header .row .navSetting .block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid var(--grey200);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.header .row .navSetting .block:hover {
+  background: var(--grey240);
+}
+.header .row .navSetting .block .icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  text-align: center;
+  line-height: 4rem;
+  background: var(--grey220);
+  color: var(--black50);
+}
+.header .row .navSetting .block:first-child .icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+}
+.header .row .navSetting .block:hover .icon {
+  transform: scale(1.1);
+}
+.header .row .navSetting .block .right {
+  display: flex;
+  flex-direction: column;
+}
+.header .row .navSetting .block .right .title {
+  font-size: 1.5rem;
+  color: var(--black50);
+  font-weight: 600;
+}
+.header .row .navSetting .block .right .help {
+  color: var(--grey);
+  font-size: 1.3rem;
+  letter-spacing: 0;
+}
+.header .row .navSetting .options {
+  position: relative;
+}
+.header .row .navSetting .options .option {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+}
+.header .row .navSetting .options .option:hover {
+  background: var(--grey240);
+}
+.header .row .navSetting .options .option .left {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+}
+.header .row .navSetting .options .option .left .icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  text-align: center;
+  line-height: 4rem;
+  background: var(--grey220);
+  color: var(--black50);
+}
+.header .row .navSetting .options .option:hover .left .icon {
+  transform: scale(1.1);
+}
+.header .row .navSetting .options .option .left .title {
+  font-size: 1.5rem;
+  color: var(--black50);
+  font-weight: 600;
+}
+.header .row .navSetting .options .option .right .icon {
+  color: var(--grey);
+}
+.header .row .navSetting .footerLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 0 1rem;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  color: var(--grey);
+  font-weight: 500;
+  margin: 2rem;
+}
+.header .row .navSetting .footerLinks .link {
+  color: inherit;
+}
+.header .row .navSetting .footerLinks .link:hover {
+  text-decoration: underline;
+}
+
+/***** Header Section End  *****/
 /* Headlines Section  */
 .headline {
   background: var(--blueLight);
@@ -271,7 +406,7 @@
   flex-direction: column;
 }
 .leftSidebar .row .navLinks .link {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -581,6 +716,7 @@
   align-items: center;
   justify-content: center;
   gap: 0 1%;
+  padding: 1rem 0;
 }
 .main .container .post .features .feature:hover {
   background: var(--grey240);
