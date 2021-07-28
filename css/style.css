@@ -3,7 +3,6 @@
   background: var(--white);
   padding: 1rem 3%;
   height: 8rem;
-  /* overflow: hidden; */
   color: var(--black);
   box-shadow: 0 0 3rem 0.1rem var(--grey200);
   position: sticky;
@@ -11,6 +10,10 @@
   left: 0;
   width: 100%;
   z-index: 100;
+}
+.header.dark {
+  background: var(--black50);
+  box-shadow: 0 0 3rem 0.1rem var(--black);
 }
 .header.sticky {
   padding: 0.5rem 3%;
@@ -155,6 +158,9 @@
   margin-left: 1rem;
   font-size: 2.4rem;
   cursor: pointer;
+}
+.header .row .right .profile .icon#themeChangeIcon.dark {
+  color: var(--black50);
 }
 .header .row .right .profile .img.sticky {
   width: 5rem;
@@ -347,6 +353,10 @@
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--black50);
+}
+.leftSidebar.dark,
+.rightSidebar.dark {
+  color: var(--grey220);
 }
 .leftSidebar a,
 .rightSidebar a {
@@ -562,7 +572,7 @@
   width: 1rem;
   background: var(--green);
   border-radius: 50%;
-  border: 0.2rem solid white;
+  border: 0.2rem solid var(--white);
 }
 .rightSidebar .contact .boxContainer .box .img {
   width: 3.5rem;
@@ -589,6 +599,9 @@
   min-height: 300vh;
   width: 100%;
   background: var(--blueLight3);
+}
+.main.dark {
+  background: var(--black50);
 }
 .main .container {
   margin: 0 auto;
@@ -670,6 +683,9 @@
   padding: 2rem 1rem;
   border-radius: 1rem;
 }
+.main .container .post.dark {
+  background: var(--black40);
+}
 .main .container .post .content {
   display: flex;
   flex-direction: row;
@@ -745,6 +761,9 @@
   margin-top: 2rem;
   border-radius: 1rem;
 }
+.postPublished.dark {
+  background: var(--black40);
+}
 .postPublished .top {
   display: flex;
   align-items: center;
@@ -770,6 +789,9 @@
   font-weight: 500;
   color: var(--black20);
 }
+.postPublished.dark .top .user .info .name {
+  color: var(--grey220);
+}
 .postPublished .top .user .info .name .icon {
   color: var(--green150);
   font-size: 1.4rem;
@@ -788,6 +810,9 @@
   color: var(--black50);
   line-height: 2rem;
   margin: 1.5rem 0;
+}
+.postPublished.dark .content .text {
+  color: var(--grey220);
 }
 .postPublished .content .text .link {
   color: var(--blueLight);
@@ -816,11 +841,19 @@
   cursor: pointer;
   border-bottom: 1px dashed var(--white);
 }
+.postPublished.dark .bottom .after .likes {
+  color: var(--grey220);
+  border-bottom: 1px dashed var(--black40);
+}
 .postPublished .bottom .after .likes {
   border-bottom: 1px dashed var(--white);
 }
 .postPublished .bottom .after .likes:hover {
   color: var(--black10);
+  border-bottom: 1px dashed var(--grey150);
+}
+.postPublished.dark .bottom .after .likes:hover {
+  color: var(--grey200);
   border-bottom: 1px dashed var(--grey150);
 }
 .postPublished .bottom .after .likes .icon {
@@ -839,8 +872,15 @@
   font-size: 1.4rem;
   color: var(--grey);
 }
+.postPublished.dark .bottom .others {
+  color: var(--grey220);
+}
 .postPublished .bottom .others .box {
   border-bottom: 0.1rem dashed var(--white);
+  cursor: pointer;
+}
+.postPublished.dark .bottom .others .box {
+  border-bottom: 0.1rem dashed var(--black40);
   cursor: pointer;
 }
 .postPublished .bottom .others .box:hover {
@@ -865,6 +905,9 @@
   align-items: center;
   gap: 0 0.5rem;
   justify-content: center;
+}
+.postPublished .bottom .before .box {
+  color: var(--grey150);
 }
 .postPublished .bottom .before .box:hover {
   background: var(--grey220);

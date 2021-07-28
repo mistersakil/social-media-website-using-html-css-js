@@ -72,6 +72,10 @@ body {
   color: var(--blue50);
   position: relative;
 }
+body.dark {
+  background: var(--black50);
+  color: var(--blueLight);
+}
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 1.4rem;

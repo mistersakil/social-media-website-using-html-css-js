@@ -1,6 +1,11 @@
 const body = document.body;
+const header = document.querySelector("#header");
+const main = document.querySelector("#main");
+const leftSidebar = document.querySelector("#leftSidebar");
+const rightSidebar = document.querySelector("#rightSidebar");
+const createNewPost = document.querySelector(".main .container .post");
+const publishedPost = document.querySelectorAll(".postPublished");
 /* Navbar sticky */
-// const header = document.querySelector("#header");
 // const logoImg = document.querySelector(".header .row .left .logo .img");
 // const profilePic = document.querySelector(".header .row .right .profile .img");
 // const navLink = document.querySelectorAll(".header .row .center .nav .link");
@@ -37,7 +42,7 @@ const body = document.body;
 
 /* Navbar sticky */
 
-/**   navSetting Menu Toggler **/
+/**   Setting Menu Toggler **/
 
 const settingMenuBox = document.querySelector(".header .row .navSetting ");
 const settingsMenuIcon = document.querySelector("#settingsMenuIcon");
@@ -47,9 +52,28 @@ settingsMenuIcon.onclick = function (event) {
   settingMenuBox.classList.toggle("active");
 };
 body.onclick = function () {
-  console.log("body click");
-  //   navSettingMenuBox.classList.toggle("active");
   if (settingMenuBox.classList.contains("active")) {
     settingMenuBox.classList.remove("active");
   }
 };
+/**   End: Setting Menu Toggler **/
+
+/**  Theme toggler  **/
+const themeChangeIcon = document.querySelector("#themeChangeIcon");
+themeChangeIcon.onclick = function () {
+  const dark = "dark";
+  this.title = this.title === "Light Theme" ? "Dark Theme" : "Light Theme";
+  this.classList.toggle(dark);
+  body.classList.toggle(dark);
+  header.classList.toggle(dark);
+  main.classList.toggle(dark);
+  leftSidebar.classList.toggle(dark);
+  rightSidebar.classList.toggle(dark);
+  createNewPost.classList.toggle(dark);
+  //   publishedPost.classList.toggle(dark);
+  for (i = 0; i < publishedPost.length; i++) {
+    publishedPost[i].classList.toggle(dark);
+  }
+};
+
+/**  End: Theme toggler  **/
