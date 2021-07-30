@@ -175,7 +175,7 @@
   border: 0.1rem solid var(--grey200);
   padding: 1rem;
   border-radius: 1rem;
-  display: block;
+  display: none;
 }
 .header .row .navSetting.active {
   display: block;
