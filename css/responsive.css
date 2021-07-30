@@ -65,6 +65,12 @@
     font-size: 2rem;
   }
   /* Header End */
+  /* IconNav Section  */
+  .iconNav {
+    display: flex;
+  }
+  /* IconNav Section End */
+
   /* Left Sidebar Section   */
 
   .leftSidebar {
@@ -106,6 +112,7 @@
   }
 
   /* Header End */
+
   /* Left Sidebar Section   */
   .leftSidebar,
   .rightSidebar {
@@ -161,11 +168,11 @@
     height: 3rem;
   }
   /* Header End */
-  /* Headlines Section  */
-  .headline {
+  /* IconNav Section  */
+  .iconNav {
     top: 12rem;
   }
-  /* Headlines Section End */
+  /* IconNav Section End */
 
   /** Main Content Section  **/
 
