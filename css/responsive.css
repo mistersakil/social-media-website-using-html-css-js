@@ -129,7 +129,7 @@
 @media screen and (max-width: 575px) {
   /* Header */
   .header {
-    background: var(--white);
+    background: var(--bgWhite);
     padding: 1rem auto;
     height: 12rem;
   }

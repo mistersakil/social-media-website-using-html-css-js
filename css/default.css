@@ -47,6 +47,24 @@
   --grey245: rgb(245, 245, 245);
   --white: rgb(255, 255, 255);
   --golden: rgb(218, 165, 32);
+  --bgWhite: rgb(255, 255, 255);
+  --bgBlueExtraLight: rgb(230, 247, 255);
+  --bgGrey: rgb(100, 100, 100);
+  --bgBlueLight: rgb(77, 184, 255);
+  --bgBlue: rgb(0, 0, 255);
+}
+.darkTheme {
+  --bgWhite: rgb(50, 50, 50);
+  --bgBlueExtraLight: rgb(80, 80, 80);
+  --bgBlueLight: rgb(20, 20, 20);
+  --bgBlue: rgb(80, 80, 80);
+  --black20: var(--grey220);
+  --black10: var(--grey220);
+  --black50: var(--grey220);
+  --black80: var(--grey220);
+  --grey: var(--grey150);
+  --blue50: var(--grey220);
+  --blueLight2: var(--black30);
 }
 
 * {
@@ -71,11 +89,9 @@ body {
   font-family: Poppins, Oswald, Roboto, sans-serif;
   color: var(--blue50);
   position: relative;
+  background: var(--bgBlueExtraLight);
 }
-body.dark {
-  background: var(--black50);
-  color: var(--blueLight);
-}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 1.4rem;
