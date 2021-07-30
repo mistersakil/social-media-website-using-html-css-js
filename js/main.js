@@ -25,10 +25,15 @@ themeChangeBtn.onclick = function (event) {
   event.stopPropagation();
   this.classList.toggle("active");
   body.classList.toggle("darkTheme");
+  let modeTitle =
+    this.parentElement.previousElementSibling.querySelector(".title");
+
   if (localStorage.getItem("theme") === "light") {
     localStorage.setItem("theme", "dark");
+    modeTitle.innerHTML = "Light Mode";
   } else if (localStorage.getItem("theme") === "dark") {
     localStorage.setItem("theme", "light");
+    modeTitle.innerHTML = "Dark Mode";
   }
 };
 
